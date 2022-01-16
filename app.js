@@ -10,7 +10,7 @@ app.use(morgan('combined'))
 
 app.get("/", (req,res) =>{
 
-    res.send("Hello sanpipop Batriya jupiter")
+    res.send("Hello sanpipop Batriya kuyiter")
 })
 
 app.listen(port, ()=>{
