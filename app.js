@@ -10,9 +10,12 @@ const PORT = process.env.PORT
 app.use(morgan('combined'))
 app.use(express.static(path.join(__dirname,"/public/")))
 
+app.set("views","./src/views")
+app.set("view engine", "ejs")
+
 app.get("/", (req,res) =>{
 
-    res.send("Hello sanpipop10100999 Batriya kuyiter")
+    res.render('index', {username: 'focuszaza55',customer: ['kitti','sanpypop','cussy']})
 })
 
 app.listen(PORT, ()=>{
