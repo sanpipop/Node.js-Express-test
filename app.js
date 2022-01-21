@@ -20,6 +20,6 @@ app.get("/", (req,res) =>{
 
 app.listen(PORT, ()=>{
     debug("Listening on port" + chalk.red(" : " + PORT))
-    console.log("Listening on port" + chalk.red(" : " + PORT))
+    
     
 })
